@@ -8,5 +8,6 @@ return {
       "rust",
       "python",
     })
+    return opts
   end,
 }
