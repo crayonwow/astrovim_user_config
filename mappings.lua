@@ -15,7 +15,19 @@ local maps = {
     ["<leader>e"] = false,
     ["<leader>o"] = false,
   },
+
   t = {},
+}
+
+maps.n["<leader>fw"] = {
+  function()
+    require("telescope.builtin").live_grep {
+      file_ignore_patterns = {
+        "vendor",
+      },
+    }
+  end,
+  desc = "Find words",
 }
 
 if is_available "toggleterm.nvim" then
