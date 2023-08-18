@@ -8,4 +8,8 @@ return {
   { import = "astrocommunity.completion.copilot-lua-cmp" },
   { import = "astrocommunity.colorscheme.rose-pine" },
   { import = "astrocommunity.colorscheme.vscode-nvim" },
+  -- { import = "astrocommunity.motion.nvim-spider" },
+  { import = "astrocommunity.scrolling.satellite-nvim" },
+  { import = "astrocommunity.test.nvim-coverage" },
+  { import = "astrocommunity.utility.neodim" },
 }

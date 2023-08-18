@@ -1,5 +1,6 @@
 local utils = require "astronvim.utils"
 local is_available = utils.is_available
+local get_icon = utils.get_icon
 -- Mapping data with "desc" stored directly by vim.keymap.set().
 --
 -- Please use this mappings table to set keyboard mapping since this is the
@@ -8,14 +9,25 @@ local is_available = utils.is_available
 local maps = {
   n = {
     ["<leader>t"] = { desc = "Test" },
+    ["<leader>T"] = { desc = get_icon("Terminal", 1, true) .. "Terminal" },
     ["<leader>tn"] = { function() require("neotest").run.run() end, desc = "Nearest" },
     ["<leader>tt"] = { function() require("neotest").summary.toggle() end, desc = "Toggle" },
 
     ["<C-n>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
+
+    ["<leader>im"] = [[<cmd>lua require'telescope'.extensions.goimpl.goimpl{}<CR>]],
+
+    -- disable some mappings
     ["<leader>e"] = false,
     ["<leader>o"] = false,
+    ["<leader>tl"] = false,
+    ["<leader>tn"] = false,
+    ["<leader>tu"] = false,
+    ["<leader>tp"] = false,
+    ["<leader>th"] = false,
+    ["<leader>tf"] = false,
+    ["<leader>tv"] = false,
   },
-
   t = {},
 }
 
