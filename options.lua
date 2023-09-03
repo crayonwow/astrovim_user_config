@@ -4,7 +4,7 @@ return {
     -- set to true or false etc.
     relativenumber = true, -- sets vim.opt.relativenumber
     number = true,         -- sets vim.opt.number
-    spell = true,          -- sets vim.opt.spell
+    spell = false,         -- sets vim.opt.spell
     signcolumn = "auto",   -- sets vim.opt.signcolumn to auto
     wrap = false,          -- sets vim.opt.wrap
     updatetime = 100,      -- Length of time to wait before triggering the plugin

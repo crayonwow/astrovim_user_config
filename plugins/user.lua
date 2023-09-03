@@ -7,12 +7,6 @@ return {
     event = "BufRead",
   },
   {
-    "ray-x/lsp_signature.nvim",
-    event = "BufRead",
-    config = function() require("lsp_signature").setup() end,
-  },
-  "chiendo97/intellij.vim",
-  {
     "nvim-neotest/neotest",
     config = function()
       -- get neotest namespace (api call creates or returns namespace)
@@ -40,7 +34,6 @@ return {
         },
       }
     end,
-    ft = { "go", "rust", "python" },
     dependencies = {
       "nvim-neotest/neotest-go",
       "nvim-neotest/neotest-python",
@@ -48,6 +41,9 @@ return {
       "nvim-lua/plenary.nvim",
       "nvim-treesitter/nvim-treesitter",
       "antoinemadec/FixCursorHold.nvim",
+    },
+    keys = {
+      { "<leader>t", mode = { "n" }, desc = "Test" },
     },
   },
   {
