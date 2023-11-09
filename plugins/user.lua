@@ -48,7 +48,7 @@ return {
   },
   {
     "edolphin-ydf/goimpl.nvim",
-    ft = { "go" },
+    event = "VeryLazy",
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-lua/popup.nvim",

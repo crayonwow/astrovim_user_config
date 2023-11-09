@@ -13,11 +13,9 @@ return {
       --
       -- go
       null_ls.builtins.formatting.gofumpt,
-      -- null_ls.builtins.formatting.goimports,
       null_ls.builtins.formatting.goimports_reviser.with {
         args = { "-company-prefixes", "bitbucket.manperi.com", "$FILENAME" },
       },
-      -- args = { "-output", "stdout", "$FILENAME" }
       null_ls.builtins.formatting.golines,
       --
       -- lua

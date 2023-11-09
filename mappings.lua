@@ -12,7 +12,12 @@ local maps = {
     ["<leader>T"] = { desc = get_icon("Terminal", 1, true) .. "Terminal" },
     ["<leader>tn"] = { function() require("neotest").run.run() end, desc = "Nearest" },
     ["<leader>tt"] = { function() require("neotest").summary.toggle() end, desc = "Toggle" },
+    ["<leader>to"] = {
+      function() require("neotest").output.open { enter = true, auto_close = true, short = true } end,
+      desc = "Toggle",
+    },
 
+    --
     ["<C-n>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
 
     ["<leader>im"] = { function() require("telescope").extensions.goimpl.goimpl {} end },
