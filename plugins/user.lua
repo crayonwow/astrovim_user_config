@@ -48,7 +48,14 @@ return {
   },
   {
     "edolphin-ydf/goimpl.nvim",
-    event = "VeryLazy",
+    keys = {
+      {
+        "<leader>im",
+        mode = { "n" },
+        function() require("telescope").extensions.goimpl.goimpl {} end,
+        desc = "Go Impl",
+      },
+    },
     dependencies = {
       "nvim-lua/plenary.nvim",
       "nvim-lua/popup.nvim",

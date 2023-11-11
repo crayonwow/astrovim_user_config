@@ -20,9 +20,6 @@ local maps = {
     --
     ["<C-n>"] = { "<cmd>Neotree toggle<cr>", desc = "Toggle Explorer" },
 
-    ["<leader>im"] = { function() require("telescope").extensions.goimpl.goimpl {} end },
-    -- ["<leader>im"] = [[<cmd>lua require'telescope'.extensions.goimpl.goimpl{}<CR>]],
-
     -- disable some mappings
     ["<leader>e"] = false,
     ["<leader>o"] = false,
