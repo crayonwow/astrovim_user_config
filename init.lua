@@ -19,7 +19,7 @@ return {
 
   -- colorscheme = "astrodark",
   -- colorscheme = "catppuccin-frappe",
-  -- colorscheme = "nord",
+  colorscheme = "nord",
   -- colorscheme = "catppuccin",
 
   -- Diagnostics configuration (for vim.diagnostics.config({...})) when diagnostics are on
